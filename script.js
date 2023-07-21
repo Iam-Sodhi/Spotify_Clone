@@ -111,6 +111,7 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((element)=>{
          }
          else{
             audio.pause();
+             makeAllPlays();
             e.target.classList.remove("fa-circle-pause");
             e.target.classList.add("fa-circle-play");
             masterPlay.classList.remove('fa-circle-pause');
